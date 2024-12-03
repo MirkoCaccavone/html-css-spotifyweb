@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* regole container con nav e main */
+.container{
+    display: flex;
+    height: calc(100vh - 100px);
+    /* DEBUG */
+    background-color: red;
+}
+
+/* regole navigatore */
+.container nav{
+    height: 100%;
+    width: 200px;
+    /* DEBUG */
+    background-color: green;
+}
+
+/* regole main */
+.container main{
+    height: 100%;
+    width: calc(100% - 200px);
+    overflow: auto;
+    /* DEBUG */
+    background-color: blue;
+}
+
+
+
+
+
+
+/* regole player  */
+.player{
+    height: 100px;
+    /* DEBUG */
+    background-color: grey;
+}
