@@ -4,12 +4,17 @@
     box-sizing: border-box;
 }
 
+/* regole generiche */
+.none{
+    text-decoration: none;
+}
+
 /* regole container con nav e main */
 .container{
     display: flex;
     height: calc(100vh - 100px);
     /* DEBUG */
-    background-color: red;
+    /* background-color: rgb(0, 119, 255); */
 }
 
 /* regole navigatore */
@@ -25,17 +30,55 @@
     height: 100%;
     width: calc(100% - 200px);
     overflow: auto;
+    background-color: #141922;
     /* DEBUG */
-    background-color: blue;
+    /* background-color: blue; */
 }
 
+/* regole bordo superiore trasparente */
+.payoff{
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
 
+/* bottone EFFETTUA UPGRADE */
+.payoff a{
+   border: 1px solid white;
+   border-radius: 999999px; 
+   padding: 8px 15px;
+   color: white;
+   font-size: 10px;
+   font-weight: bold;
+}
+
+/* lista con link di pagina */
+.lista-superiore{
+    display: flex;
+    justify-content: center;
+    list-style: none;  
+}
+
+.lista-superiore li{
+    margin: 15px 10px;
+    font-size: 10px;
+}
+
+.lista-superiore a{
+    color: #787a7f;
+}
 
 
 
 
 /* regole player  */
 .player{
+    display: flex;
+    justify-content: space-between;
     height: 100px;
     /* DEBUG */
     background-color: grey;
