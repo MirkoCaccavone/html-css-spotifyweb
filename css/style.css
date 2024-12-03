@@ -9,6 +9,12 @@
     text-decoration: none;
 }
 
+h2{
+    color: white;
+    margin: 5px 10px;
+    
+}
+
 /* regole container con nav e main */
 .container{
     display: flex;
@@ -60,7 +66,9 @@
 .lista-superiore{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     list-style: none;  
+
 }
 
 .lista-superiore li{
@@ -68,9 +76,56 @@
     font-size: 10px;
 }
 
-.lista-superiore a{
+.lista-superiore a,
+.suggerimenti{
     color: #787a7f;
+
 }
+
+/* regole prima riga card */
+.row{
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+}
+
+.card{
+    width: calc(100% / 6);
+    margin: 20px 10px;
+    color: white;
+    text-align: center;
+}
+
+.card img{
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.subtitle-song{
+    font-size: 10px;
+    margin: 10px 0;
+}
+
+/* regole seconda riga card */
+
+.second-row{
+    justify-content: start;
+}
+
+.suggerimenti{
+    margin-left: 10px;
+}
+
+.round-img{
+    border-radius: 999999px;
+}
+
+
+
+
+
+
+
 
 
 
