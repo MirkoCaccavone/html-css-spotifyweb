@@ -5,7 +5,7 @@
 }
 
 /* regole generiche */
-.none{
+a{
     text-decoration: none;
 }
 
@@ -23,7 +23,36 @@ ul{
     list-style: none;
 }
 
-/* regole container con nav e main */
+/* EFFETTI HOVER */
+
+.hover-white:hover{
+    color: #fff;
+}
+
+.hover-transform:hover{
+    transform: scale(1.1);
+}
+
+/* hover CARD */
+.card:hover .fa-circle-play.hover-play{
+    opacity: 1;
+}
+
+.card:hover img{
+    opacity: 0.5;
+}
+
+/* hover player */
+.barra-ascolto:hover{
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+.barra-ascolto:hover .point{
+    display: block;
+}
+
+/* REGOLE CONTAINER CON NAV E MAIN */
 .container{
     display: flex;
     height: calc(100vh - 80px);
@@ -125,7 +154,7 @@ hr{
     display: inline-block;
 }
 
-/* regole main */
+/* REGOLE MAIN */
 .container main{
     height: 100%;
     width: calc(100% - 200px);
@@ -142,6 +171,7 @@ hr{
     display: flex;
     justify-content: end;
     align-items: center;
+    z-index: 99999;
 }
 
 /* bottone EFFETTUA UPGRADE */
@@ -152,6 +182,7 @@ hr{
    color: white;
    font-size: 10px;
    font-weight: bold;
+   margin-right: 10px;
 }
 
 /* lista con link di pagina */
@@ -183,11 +214,16 @@ hr{
     width: calc(100% / 6);
     color: white;
     text-align: center;
+    position: relative;
 }
 
-/* hover CARD */
-.card img:hover{
-    opacity: 0.5;
+.fa-circle-play.hover-play{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50% , -25%);
+    font-size: 50px;
+    opacity: 0;
 }
 
 .card img{
@@ -198,12 +234,6 @@ hr{
 .subtitle-song{
     font-size: 10px;
     margin: 10px 0;
-}
-
-/* regole seconda riga card */
-
-.second-row{
-    justify-content: start;
 }
 
 /* regole terza riga card */
@@ -280,7 +310,7 @@ hr{
 
 .barra-caricamento{
     display: inline-block;
-    height: 3px;
+    height: 4px;
     background-color: #5a5a5a;
 }
 
@@ -288,12 +318,26 @@ hr{
     width: 80%;
 }
 .barra-ascolto{
-    height: 3px;
+    height: 4px;
     background-color: lightgrey;
+    position: relative;
 }
 
 .barra-ascolto.musica{
     width: 25%;
+}
+
+/* punto visibile con l'hover */
+.point{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: none;
 }
 
 /* CONTENUTO DESTRO PLAYER */
@@ -422,6 +466,4 @@ hr{
         display: block;
     }
 
-    
-        
 }
