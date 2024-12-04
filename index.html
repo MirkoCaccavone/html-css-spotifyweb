@@ -21,9 +21,9 @@
                 <img src="./img/logo.svg" alt="logo spotify" id="logo-spotify">
 
                 <!-- HOME -->
-                <div class="">
+                <div>
                     <img src="./img/home.svg" alt="" class="icona-nav">
-                    <span class="grey-text">
+                    <span class="grey-text text-header">
                         Home
                     </span>
                 </div>
@@ -31,7 +31,7 @@
                 <!-- CERCA -->
                 <div>
                     <img src="./img/search.svg" alt="" class="icona-nav">
-                    <span class="grey-text">
+                    <span class="grey-text text-header">
                         Cerca
                     </span>
                 </div>
@@ -39,13 +39,12 @@
                 <!-- LA TUA LIBRERIA -->
                 <div>
                     <img src="./img/libreria.svg" alt="" class="icona-nav">
-                    <span class="grey-text">
+                    <span class="grey-text text-header">
                         La tua libreria
                     </span>
                 </div>
             </div>
             
-
             <!-- parte centrale con playlist -->
             <div class="playlist">
 
@@ -103,7 +102,6 @@
 
             </div>
             
-
         </nav>
 
         <!-- main con card canzoni -->
@@ -283,17 +281,56 @@
     <!-- contenitore con barra inferiore -->
     <div class="player">
         <!-- contenuto di sx -->
-        <div>
-
+        <div class="content-sx">
+            <img src="./img/sinister.jpeg" alt="">
+            <div>
+                <h5>
+                    Sinister
+                </h5>
+                <span class="grey-text">
+                    Brano Nome
+                </span>
+            </div>
+            <i class="fa-regular fa-heart grey-text"></i>
+            <i class="fa-regular fa-folder grey-text"></i>
         </div>
         <!-- contenuto centrale -->
-        <div>
+        <div class="content-center">
 
+            <!-- contenitore con bottoni -->
+            <div class="player-buttons">
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-regular fa-circle-play"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-arrow-rotate-right"></i>
+            </div>
+
+            <!-- contenitore con barra play -->
+            <div>
+                <span class="minuti-ascolto">
+                    0:25
+                </span>
+                <div class="barra-caricamento musica">
+                    <div class="barra-ascolto musica">     
+                    </div>
+                </div>
+                <span class="minuti-ascolto">
+                    4:35
+                </span>
+            </div>
         </div>
 
         <!-- contenuto di dx -->
-        <div>
+        <div class="content-dx">
+            <i class="fa-solid fa-list"></i>
+            <i class="fa-solid fa-desktop"></i>
+            <i class="fa-solid fa-volume-high"></i>
 
+            <div class="barra-caricamento volume">
+                <div class="barra-ascolto volume">     
+                </div>
+            </div>
         </div>
     </div>
 </body>

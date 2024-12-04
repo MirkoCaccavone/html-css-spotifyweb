@@ -10,7 +10,8 @@
 }
 
 h2, 
-h4{
+h4,
+h5{
     color: white; 
 }
 
@@ -46,26 +47,35 @@ ul{
     margin-bottom: 15px;
 }
 
+.header-nav > div{
+    position: relative;
+}
+
 /* icone home/cerca/libreria */
 .icona-nav{
     width: 25px;
-    /* margin: 5px 0; */
+}
+
+.text-header{
+    margin-left: 5px;
+    position: absolute;
+    top: 25%;
 }
 
 .playlist{
     height: calc(100% - 210px);
     overflow: auto;
-
 }
 
 /* icona crea playlist */
 .fa-square-plus{
-    font-size: 40px;
+    font-size: 35px;
     color: #787a7f;
 }
 
 .playlist li{
     line-height: 25px;
+    font-size: 12px;
 }
 
 /* parte bassa nav */
@@ -73,6 +83,7 @@ ul{
 .footer-nav{
     height: 50px;
 }
+
 .img-download{
     width: 10px;
 }
@@ -156,6 +167,7 @@ hr{
     text-align: center;
 }
 
+/* hover CARD */
 .card img:hover{
     opacity: 0.5;
 }
@@ -183,14 +195,107 @@ hr{
 }
 
 
-
 /* regole player  */
 .player{
     display: flex;
     justify-content: space-between;
     height: 80px;
-    /* DEBUG */
-    background-color: grey;
+    background-color: #282828;
+}
+
+ /* CONTENUTO SINISTRO PLAYER*/
+.content-sx{
+    display: flex;
+    flex-basis: 20%;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.content-sx > img{
+    max-height: 60%;
+    margin-right: 10px;
+    
+}
+
+.content-sx span{
+    font-size: 10px;
+}
+
+.content-sx > div{
+    margin-right: 30px;
+}
+
+.fa-heart,
+.fa-folder{
+    margin: 10px;
+}
+
+/* CONTENUTO CENTRALE PLAYER */
+
+.content-center{
+    flex-basis: 60%;
+    text-align: center;
+}
+
+/* bottoni player */
+
+.player-buttons i{
+    color: white;
+    margin: 10px;
+}
+
+/* tasto play */
+
+.fa-circle-play{
+    font-size: 25px;
+}
+
+.minuti-ascolto{
+    color: #fff;
+    margin: 5px;
+    font-size: 10px;
+}
+
+.barra-caricamento{
+    display: inline-block;
+    height: 3px;
+    background-color: #5a5a5a;
+}
+
+.barra-caricamento.musica{
+    width: 300px;
+}
+.barra-ascolto{
+    height: 3px;
+    background-color: lightgrey;
+}
+
+.barra-ascolto.musica{
+    width: 50px;
+}
+
+/* CONTENUTO DESTRO PLAYER */
+
+.content-dx{
+    display: flex;
+    align-items: center;
+    flex-basis: 20%;
+    justify-content: end;
+    margin-right: 10px;
+}
+
+.content-dx i{
+    font-size: 12px;
+    color: white;
+    margin: 10px;
+}
+
+.barra-caricamento.volume{
+    width: 100px;
+}
+
+.barra-ascolto.volume{
+    width: 50px;
 }
 
 @media screen and (max-width: 768px) {
