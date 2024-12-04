@@ -34,7 +34,7 @@ ul{
 }
 
 /* hover CARD */
-.card:hover .fa-circle-play.hover-play{
+.container-img-album:hover .fa-circle-play.hover-play{
     opacity: 1;
 }
 
@@ -226,19 +226,22 @@ hr{
     width: calc(100% / 6);
     color: white;
     text-align: center;
+}
+
+.container-img-album{
     position: relative;
 }
 
 .fa-circle-play.hover-play{
     position: absolute;
-    top: 25%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50% , -25%);
-    font-size: 50px;
+    transform: translate(-50% , -50%);
+    font-size: 45px;
     opacity: 0;
 }
 
-.card img{
+.container-img-album img{
     max-width: 100%;
     margin-bottom: 10px;
 }
