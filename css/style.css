@@ -52,6 +52,18 @@ ul{
     display: block;
 }
 
+/* EFFETTI ACTIVE */
+
+.active-left:active{
+    border-left: 2px solid greenyellow;
+    padding-left: 2px; 
+}
+
+.active-bottom:active{
+    border-bottom: 2px solid greenyellow;
+    padding-bottom: 5px;
+}
+
 /* REGOLE CONTAINER CON NAV E MAIN */
 .container{
     display: flex;
