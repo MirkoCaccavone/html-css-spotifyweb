@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Spotify</title>
 </head>
@@ -13,6 +14,95 @@
 
         <!-- navigatore sx  -->
         <nav>
+
+            <!-- parte superiore navigatore -->
+            <div class="header-nav">
+                <!-- logo-spotify -->
+                <img src="./img/logo.svg" alt="logo spotify" id="logo-spotify">
+
+                <!-- HOME -->
+                <div class="">
+                    <img src="./img/home.svg" alt="" class="icona-nav">
+                    <span class="grey-text">
+                        Home
+                    </span>
+                </div>
+
+                <!-- CERCA -->
+                <div>
+                    <img src="./img/search.svg" alt="" class="icona-nav">
+                    <span class="grey-text">
+                        Cerca
+                    </span>
+                </div>
+
+                <!-- LA TUA LIBRERIA -->
+                <div>
+                    <img src="./img/libreria.svg" alt="" class="icona-nav">
+                    <span class="grey-text">
+                        La tua libreria
+                    </span>
+                </div>
+            </div>
+            
+
+            <!-- parte centrale con playlist -->
+            <div class="playlist">
+
+                <h4>
+                    PLAYLIST
+                </h4>
+
+                <div>
+                    <i class="fa-solid fa-square-plus"></i>
+                    <span class="grey-text">Crea Playlist</span>
+                </div>
+
+                <div>
+                    <ul>
+                        <li class="grey-text">
+                            Nome Playlist
+                        </li>
+                        <li class="grey-text">
+                            Nome Playlist
+                        </li>
+                        <li class="grey-text">
+                            Nome Playlist
+                        </li>
+                        <li class="grey-text">
+                            Nome Playlist
+                        </li>
+                        <li class="grey-text">
+                            Nome Playlist
+                        </li>
+                        <li class="grey-text">
+                            Nome Playlist
+                        </li>
+                        <li class="grey-text">
+                            Nome Playlist
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- parte inferiore navigatore -->
+            <div class="footer-nav">
+
+                <img src="./img/download.svg" alt="" class="img-download">
+
+                <span class="grey-text">
+                    Installa app
+                </span>
+
+                <hr>
+
+                <i class="fa-regular fa-user"></i>
+
+                <h4 class="nome-utente">
+                    John Doe
+                </h4>
+
+            </div>
+            
 
         </nav>
 
@@ -28,32 +118,32 @@
             <section>
                 <ul class="lista-superiore">
                     <li>
-                        <a href="#" class="none">
+                        <a href="#" class="none grey-text">
                             IN EVIDENZA
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="none">
+                        <a href="#" class="none grey-text">
                             PODCAST
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="none">
+                        <a href="#" class="none grey-text">
                             CLASSIFICHE
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="none">
+                        <a href="#" class="none grey-text">
                             GENERI E MOOD
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="none">
+                        <a href="#" class="none grey-text">
                             NUOVE USCITE
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="none">
+                        <a href="#" class="none grey-text">
                             SCOPRI
                         </a>
                     </li>
@@ -61,7 +151,7 @@
             </section>
 
             <!-- SECTION PRIMA RIGA CARD -->
-            <section>
+            <section class="canzoni">
                 <h2>
                     Recently played
                 </h2>
@@ -72,7 +162,7 @@
                         <div class="title-song">
                             Heavy Metal
                         </div>
-                        <div class="subtitle-song">
+                        <div class="subtitle-song grey-text">
                             subtitle
                         </div>
                     </div>
@@ -82,7 +172,7 @@
                         <div class="title-song">
                             Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)
                         </div>
-                        <div class="subtitle-song">
+                        <div class="subtitle-song grey-text">
                             Kyle Dixon & Michael Stein
                         </div>
                     </div>
@@ -92,7 +182,7 @@
                         <div class="title-song">
                             Aquiet place
                         </div>
-                        <div class="subtitle-song">
+                        <div class="subtitle-song grey-text">
                             subtitle
                         </div>
                     </div>
@@ -102,7 +192,7 @@
                         <div class="title-song">
                             Split
                         </div>
-                        <div class="subtitle-song">
+                        <div class="subtitle-song grey-text">
                             subtitle
                         </div>
                     </div>
@@ -112,7 +202,7 @@
                         <div class="title-song">
                             A cure for wellness
                         </div>
-                        <div class="subtitle-song">
+                        <div class="subtitle-song grey-text">
                             subtitle
                         </div>
                     </div>
@@ -122,7 +212,7 @@
                         <div class="title-song">
                             Sinister
                         </div>
-                        <div class="subtitle-song">
+                        <div class="subtitle-song grey-text">
                             subtitle
                         </div>
                     </div>
@@ -131,12 +221,12 @@
             </section>
 
             <!-- SECTION SECONDA RIGA CARD -->
-            <section>
+            <section class="canzoni">
                 <h2>
                     Creato per John Doe
                 </h2>
 
-                <span class="suggerimenti">
+                <span class="grey-text">
                     Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti
                 </span>
 
@@ -160,12 +250,12 @@
             </section>
 
             <!-- SECTION TERZA RIGA CARD -->
-             <section>
+             <section class="canzoni">
                 <h2>
                     Artisti pi&ugrave; popolari
                 </h2>
 
-                <span class="suggerimenti">
+                <span class="grey-text">
                     Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti
                 </span>
 

@@ -9,26 +9,89 @@
     text-decoration: none;
 }
 
-h2{
-    color: white;
-    margin: 5px 10px;
-    
+h2, 
+h4{
+    color: white; 
+}
+
+.grey-text{
+    color: #787a7f;
+}
+
+ul{
+    list-style: none;
 }
 
 /* regole container con nav e main */
 .container{
     display: flex;
-    height: calc(100vh - 100px);
-    /* DEBUG */
-    /* background-color: rgb(0, 119, 255); */
+    height: calc(100vh - 80px);
 }
 
 /* regole navigatore */
 .container nav{
     height: 100%;
     width: 200px;
+    padding: 10px;
     /* DEBUG */
-    background-color: green;
+    background-color: #000;
+}
+
+.header-nav{
+    height: 150px;
+}
+
+#logo-spotify{
+    width: 130px;
+    margin-bottom: 15px;
+}
+
+/* icone home/cerca/libreria */
+.icona-nav{
+    width: 25px;
+    /* margin: 5px 0; */
+}
+
+.playlist{
+    height: calc(100% - 210px);
+    overflow: auto;
+
+}
+
+/* icona crea playlist */
+.fa-square-plus{
+    font-size: 40px;
+    color: #787a7f;
+}
+
+.playlist li{
+    line-height: 25px;
+}
+
+/* parte bassa nav */
+
+.footer-nav{
+    height: 50px;
+}
+.img-download{
+    width: 10px;
+}
+
+hr{
+    margin: 10px 0;
+}
+
+.fa-user{
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 15px;
+    color: #fff;
+    padding: 5px;
+    background-color: #787a7f;
+}
+
+.nome-utente{
+    display: inline-block;
 }
 
 /* regole main */
@@ -66,9 +129,7 @@ h2{
 .lista-superiore{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    list-style: none;  
-
+    flex-wrap: wrap;  
 }
 
 .lista-superiore li{
@@ -76,24 +137,27 @@ h2{
     font-size: 10px;
 }
 
-.lista-superiore a,
-.suggerimenti{
-    color: #787a7f;
+/* regole card */
 
+.canzoni{
+    padding: 10px 20px;
 }
 
 /* regole prima riga card */
 .row{
     display: flex;
-    justify-content: space-around;
+    gap: 15px;
     margin: 15px 0;
 }
 
 .card{
     width: calc(100% / 6);
-    margin: 20px 10px;
     color: white;
     text-align: center;
+}
+
+.card img:hover{
+    opacity: 0.5;
 }
 
 .card img{
@@ -112,9 +176,7 @@ h2{
     justify-content: start;
 }
 
-.suggerimenti{
-    margin-left: 10px;
-}
+/* regole terza riga card */
 
 .round-img{
     border-radius: 999999px;
@@ -122,19 +184,32 @@ h2{
 
 
 
-
-
-
-
-
-
-
-
 /* regole player  */
 .player{
     display: flex;
     justify-content: space-between;
-    height: 100px;
+    height: 80px;
     /* DEBUG */
     background-color: grey;
+}
+
+@media screen and (max-width: 768px) {
+    .row{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .card{
+        width: 22%;
+    }
+
+    .title-song{
+        font-size: 10px;
+    }
+
+    .subtitle-song{
+        font-size: 7px;
+        margin: 5px 0;
+    }
+
+
 }
