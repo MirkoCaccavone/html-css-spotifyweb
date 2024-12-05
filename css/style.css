@@ -4,7 +4,10 @@
     box-sizing: border-box;
 }
 
-/* regole generiche */
+/********************************
+       regole generiche
+*********************************/
+
 body{
     font-family: 'Montserrat', sans-serif;
 }
@@ -26,7 +29,10 @@ ul{
     list-style: none;
 }
 
-/* EFFETTI HOVER */
+
+/********************************
+         EFFETTI HOVER   
+*********************************/
 
 .hover-white:hover{
     color: #fff;
@@ -56,7 +62,10 @@ ul{
     display: block;
 }
 
-/* EFFETTI ACTIVE */
+
+/********************************
+         EFFETTI ACTIVE 
+*********************************/
 
 .active-left:active{
     border-left: 2px solid greenyellow;
@@ -74,7 +83,9 @@ ul{
     height: calc(100vh - 80px);
 }
 
-/* REGOLE NAVIGATORE */
+/********************************
+       REGOLE NAVIGATORE
+*********************************/
 
 .container nav{
     height: 100%;
@@ -170,7 +181,11 @@ hr{
     display: inline-block;
 }
 
-/* REGOLE MAIN */
+
+/********************************
+         REGOLE MAIN 
+*********************************/
+
 .container main{
     height: 100%;
     width: calc(100% - 200px);
@@ -261,8 +276,10 @@ hr{
     border-radius: 999999px;
 }
 
+/********************************
+         REGOLE PLAYER
+*********************************/
 
-/* REGOLE PLAYER */
 .player{
     display: flex;
     justify-content: space-between;
@@ -383,6 +400,10 @@ hr{
     width: 50%;
 }
 
+/********************************
+        MEDIA PER TABLET
+*********************************/  
+
 @media screen and (max-width: 768px) {
     /* regole card main */
     .row{
@@ -417,6 +438,10 @@ hr{
     }
 }
 
+/********************************
+      MEDIA PER MOBILE
+*********************************/  
+
 @media screen and (max-width: 568px){
     /* regole card main*/
     .card{
@@ -446,6 +471,10 @@ hr{
     }
  
 }
+
+/********************************
+        MEDIA EXTRA SMALL
+*********************************/
 
 @media screen and (max-width: 530px){
 
