@@ -72,9 +72,20 @@ ul{
     padding-left: 2px; 
 }
 
-.active-bottom:active{
-    border-bottom: 2px solid greenyellow;
-    padding-bottom: 5px;
+.active-bottom{
+    position: relative;
+}
+
+/* per cambiare la grandezza del bordo active */
+.active-bottom:active::after {
+    content: ''; 
+    position: absolute;
+    bottom: -10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 50%; 
+    height: 2px; 
+    background-color: greenyellow;
 }
 
 /* REGOLE CONTAINER CON NAV E MAIN */
